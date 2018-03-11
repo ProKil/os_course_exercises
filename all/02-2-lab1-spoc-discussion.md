@@ -22,6 +22,10 @@
 ### 启动顺序
 
 1. 段寄存器的字段含义和功能有哪些？
+- CS(Code Segment)：代码段寄存器 IP(Instruction Pointer)：指令指针
+- DS(Data Segment)：数据段寄存器 SI(Source Index)：源变址寄存器，可用来存放相对于DS段之源变址指针。
+- SS(Stack Segment)：堆栈段寄存器 SP(Stack Pointer)：堆栈指针 BP(Base Pointer)：基址指针寄存器，可用作SS的一个相对基址位置。
+- ES(Extra Segment)：附加段寄存器 目的变址寄存器，可用来存放相对于ES段之目的变址指针。
 2. 描述符特权级DPL、当前特权级CPL和请求特权级RPL的含义是什么？在哪些寄存器中存在这些字段？对应的访问条件是什么？
 3. 分析可执行文件格式elf的格式（无需回答）
 
